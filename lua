@@ -111,6 +111,7 @@ tab:button({
 })
 
 tab:textbox({
+    Name = "insert a number, 55+ wins",
     Callback = function(Value)
         if tonumber(Value) >= 55 then
             MessagePosted.fire("", ("YOU WON! You rolled a %s"):format(Value))
